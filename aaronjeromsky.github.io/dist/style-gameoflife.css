@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "Determination Sans";
+  src: url(/assets/fonts/determinationsansweb-webfont.ttf);
+}
+/*
+Use variables from the 'util' folder.
+*/
+/* 
+Makes the font size always match the default zoom level in the browser.
+Prevents the size of the element being change by its border size.
+*/
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+/*
+Inherit the box sizing of the border box element.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/*
+Default values, incase the browser overwrites the intended settings.
+*/
+body {
+  background-color: var(--background-color);
+  color: var(--color);
+  font-family: "Determination Sans";
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Prevents the browser from overwriting the following elements.
+*/
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 0;
+}
+
+/*
+Prevents the browser from overwriting paragraph margins.
+*/
+p {
+  margin-top: 0;
+}
+
+/*
+Prevents the browser from underlining links.
+*/
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+button {
+  background-color: hsl(0deg, 0%, 0%);
+  border: 4px solid hsl(0deg, 0%, 100%);
+  color: hsl(0deg, 0%, 100%);
+  font-family: "Determination Sans";
+  font-size: 32px;
+}
+
+.button_container {
+  bottom: 0px;
+  display: block;
+  position: fixed;
+}
+
+button:hover {
+  border: 4px solid hsl(60deg, 100%, 50%);
+  color: hsl(60deg, 100%, 50%);
+  cursor: pointer;
+}
+
+#return_home {
+  border: 4px solid hsl(0deg, 100%, 50%);
+  color: hsl(0deg, 100%, 50%);
+}
+
+#return_home:hover {
+  border: 4px solid hsl(0deg, 100%, 25%);
+  color: hsl(0deg, 100%, 25%);
+}
+
+.canvas_container {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background: hsl(0deg, 0%, 16%);
+}/*# sourceMappingURL=style-gameoflife.css.map */

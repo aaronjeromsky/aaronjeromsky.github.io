@@ -1,0 +1,26 @@
+/*
+Prevents the browser from overwriting the following elements.
+*/
+h1,
+h2,
+h3 {
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: 0;
+}
+
+/*
+Prevents the browser from overwriting paragraph margins.
+*/
+p {
+    margin-top: 0;
+}
+
+/*
+Prevents the browser from underlining links.
+*/
+a,
+a:visited,
+a:active {
+    text-decoration: none;
+}
