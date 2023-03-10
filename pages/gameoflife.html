@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Conway's Game of Life</title>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#4a557d">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="/dist/style-gameoflife.css" />
+    <script src="/app/js/gameoflife.js"></script>
+
+</head>
+
+<body>
+
+    <div class="canvas_container">
+
+        <canvas id="canvas" class="canvas" width="600" height="600"></canvas>
+
+        <div class="button_container">
+
+            <button class="toggle" id="toggle_heatmap" title="Toggle the lifespan visualization."
+                onclick="toggleHeatmap()">* Heatmap</button>
+            <button class="toggle" id="toggle_gridlines" title="Toggle the gridlines visualization."
+                onclick="toggleGridlines()">* Gridlines</button>
+            <button class="toggle" id="reset_canvas" title="Reset the game to its initial state."
+                onclick="resetCanvas()">* Reset</button>
+            <button class="toggle" id="return_home" title="Return to the homepage."
+                onclick="location.href='/index.html';">* Return</button>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

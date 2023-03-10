@@ -1,0 +1,43 @@
+@forward 'global';
+@forward 'utility';
+@use '../scss/utility/fonts' as f;
+@use '../scss/global/colors' as c;
+
+button {
+	background-color: c.$background;
+	border: 4px solid c.$border;
+	color: c.$text1;
+	font-family: 'Determination Sans';
+	font-size: 32px;
+}
+
+.button_container {
+	bottom: 0px;
+	display: block;
+	position: fixed;
+}
+
+button:hover {
+	border: 4px solid c.$highlight;
+	color: c.$highlight;
+	cursor: pointer;
+}
+
+#return_home {
+	border: 4px solid c.$warning;
+	color: c.$warning;
+}
+
+#return_home:hover {
+	border: 4px solid c.$dark-warning;
+	color: c.$dark-warning;
+}
+
+.canvas_container {
+	display: flex;
+	justify-content: center;
+}
+
+body {
+	background: c.$margin;
+}

@@ -1,0 +1,34 @@
+/*
+Use variables from the 'util' folder.
+*/
+@use '../utility/' as u;
+
+/* 
+Makes the font size always match the default zoom level in the browser.
+Prevents the size of the element being change by its border size.
+*/
+html {
+	box-sizing: border-box;
+	font-size: 100%;
+}
+
+/*
+Inherit the box sizing of the border box element.
+*/
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+/*
+Default values, incase the browser overwrites the intended settings.
+*/
+body {
+	background-color: var(--background-color);
+	color: var(--color);
+	font-family: 'Determination Sans';
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+}
