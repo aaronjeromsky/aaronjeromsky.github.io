@@ -132,7 +132,7 @@ img {
 }
 
 .header__home {
-	@include fontSize(24px);
+	@include fontSize(32px);
 	color: c.$text1;
 	margin-inline-end: auto;
 }
@@ -163,17 +163,12 @@ img {
 
 .profile__content picture {
 	order: 2;
-	margin-left: -80px;
 }
 
 .profile__image {
-	left: 50%;
-	height: 400px;
-	width: 400px;
 	position: relative;
-	top: 50px;
-	translate: -50%;
-	margin-block-start: -182px;
+	margin-bottom: -180px;
+	right: 78px;
 }
 
 .profile__image[type="checkbox"] {
@@ -192,10 +187,12 @@ img {
 	border: 4px solid c.$border;
 	margin-right: 76px; // -4px to overlap image border.
 	z-index: 1;
+	position: relative;
+	top: 132px;
 }
 
 .profile__headline {
-	@include fontSize(80px);
+	@include fontSize(64px);
 	margin-block: 0px;
 	margin-left: 20px;
 	margin-right: 20px;
@@ -203,22 +200,28 @@ img {
 }
 
 /* PROJECTS */
+
 .projects__wrapper {
 	padding-block: 140px; // top and bottom padding
+	align-items: center;
+	justify-items: center;
 }
 
 .projects__grid {
 	display: grid;
 	gap: 80px 0px;
 	grid-template-columns: repeat(2, 1fr);
-	justify-items: start;
+	align-items: center;
+	justify-items: center;
 	text-align: center;
 }
 
 .projects__headline {
-	@include fontSize(60px);
+	@include fontSize(64px);
 	grid-column: span 1;
 	margin-block-end: 0;
+	position: relative;
+	left: 80px;
 }
 
 .projects__item {
@@ -256,14 +259,12 @@ img {
 	top: 0;
 	left: 0;
 	transition: opacity 150ms ease-in-out;
-	height: 100%;
-	width: 100%;
 }
 
-.projects__image {
-	height: 100%;
-	width: 100%;
-}
+// CURRENTLY UNUSED
+//.projects__image {
+// ...
+//}
 
 .projects__name {
 	@include fontSize(32px);
